@@ -20,6 +20,10 @@
 </table>
 
 <% if current_user != user %>
+  <%= link_to 'Begin Chat', chat_path(user.id) %>
+<% end %>
+
+<% if current_user != user %>
   <% if user.followed_by?(current_user) %>
     <p><%=link_to "フォロー解除", user_relationships_path(user.id), method: :delete %></p>
   <% else %>
