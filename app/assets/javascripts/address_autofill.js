@@ -1,4 +1,5 @@
-$(function() {
+document.addEventListener("turbolinks:load"
+,function() {
   return $('#user_postcode').jpostal({
     postcode: ['#user_postcode'],
     address: {
