@@ -6,7 +6,7 @@ class DailyMailer < ApplicationMailer
   #   en.daily_mailer.daily_notification.subject
   #
   def daily_notification
-    mail(:subject => "Daily Report of Your Record", to: User.pluck(:email))
+    mail(:subject => "Daily Report of Your Record", bcc: User.pluck(:email))
     p"send"
   end
 
