@@ -70,3 +70,4 @@ gem 'jquery-rails'
 gem 'jp_prefecture'
 gem 'font-awesome-sass', '~> 5.13'
 gem 'dotenv-rails'
+gem 'whenever', require: false
